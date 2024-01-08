@@ -1,0 +1,329 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    
+    
+}
+
+header {
+    background: #f8f8f8;
+    padding: 10px 0;
+    text-align: center;
+    
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+footer {
+    background: #f8f8f8;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1.logo_text {
+    color:#15a0f0;
+
+}
+
+section.reviews{
+    max-width: 1040px;
+    padding: 0 20px;
+    margin: 0 auto;
+
+}
+
+.header-nav {
+    background-color: #f8f8f8; 
+    padding: 10px 0; 
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+}
+
+.nav-list li {
+    margin: 0 10px; 
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.nav-list a:hover {
+    color: #007bff; 
+}
+
+
+.block {
+    text-align: center;  
+    width: 80%;          
+    margin: 0 auto;      
+    overflow: hidden;    
+}
+
+.block span {
+    position: relative;
+}
+
+.block span:before {
+    display: block;                  
+    width:1000px;                    
+    content: '';                     
+    position: absolute;              
+    border-bottom: 1px solid #000;   
+    top:50%;                         
+    right: 170px;                    
+}
+ 
+
+.block span:after {
+    display: block;
+    width:1000px;
+    content: '';
+    position: absolute;
+    border-bottom: 1px solid #000;
+    top:50%;
+    left: 170px; 
+}
+
+
+
+p{ 
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#services {
+    text-align: center;
+    padding: 20px;
+    background-color: #AFEEEE;
+}
+
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+}
+
+.service-item {
+    flex: 1 0 calc(33.333% - 10px); 
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    margin-bottom: 5px;
+}
+
+.service-item p {
+    margin-top: 0;
+    font-size: 1em;
+}
+
+.order-button {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.order-button:hover {
+    background-color: #45a049;
+}
+
+
+
+#reviews {
+    text-align: center;
+    padding: 20px;
+    background-color: #AFEEEE;
+}
+
+.feedbacks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px; 
+    background-color: #AFEEEE;
+}
+
+.feedback_container {
+    flex: 1 1 calc(33.333% - 20px); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    margin-bottom: 20px; 
+}
+
+.feedback_photo {
+    max-width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.person_name {
+    margin: 5px 0;
+}
+
+.feedback_text {
+    font-size: 0.9em;
+}
+
+
+.social {
+    text-align: center;
+    padding: 20px;
+}
+
+.social-item {
+    display: inline-block;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.social-item img {
+    width: 24px; /* или другой размер,
+подходящий для вашего дизайна */
+height: auto;
+}
+
+.social-item p {
+margin-top: 5px;
+font-size: 14px;
+color: #333;
+}
+
+
+
+
+#contacts {
+    /* background-color: #f0f0f0; */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #AFEEEE;
+}
+
+#contactForm div {
+    margin-bottom: 15px;
+}
+
+#contactForm label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contactForm input[type="text"],
+#contactForm input[type="email"],
+#contactForm input[type="phone"],
+#contactForm textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#contactForm button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contactForm button:hover {
+    background-color: #45a049;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-list li {
+        margin-bottom: 10px;
+    }
+
+    .service-container {
+        flex-direction: column;
+    }
+
+    .service-item {
+        flex-basis: 100%;
+    }
+
+    .feedbacks {
+        flex-direction: column;
+    }
+
+    .feedback_container {
+        flex-basis: 100%;
+    }
+
+    .block {
+        width: 100%;
+    }
+
+    .block span:before,
+    .block span:after {
+        width: 500px; 
+        right: 100px; 
+        left: 100px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .block span:before,
+    .block span:after {
+        width: 250px; 
+        right: 50px;
+        left: 50px;
+    }
+
+    .social-item img {
+        width: 20px; 
+    }
+}
+
+
+
